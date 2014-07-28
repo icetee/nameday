@@ -3,7 +3,7 @@
 ### Használat ###
 Ahogy az example.php fájlban is megtalálható, egy új objektumot kell létrehozni, hogy hívatkozni lehessen az osztályra.
 
-----------
+======
 
 Ehhez először meg kell hívni az osztályt tartalmazó fájlt:
 
