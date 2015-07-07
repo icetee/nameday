@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * Nevnapok - PHP Hungarian Namedays.
 *
@@ -13,7 +13,7 @@
 * @license The MIT License (MIT)
 * @link http://icetee.hu
 * @version 2014 Stable
-* @since version 1.1.1
+* @since version 1.1.2
 */
 
 class NevnapLista extends Nevnap  {
