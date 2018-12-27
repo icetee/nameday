@@ -30,7 +30,7 @@ class NevnapLista extends Nevnap  {
 		switch ($lang) {
 			case "hu_HU":
 				return array(
-					"Január"		=>	array(
+					1		=>	array(
 						array("Alpár", "Fruzsina", "Bazil"),
 						array("Ábel", "Gergely", "Vazul"),
 						array("Genovéva", "Gyöngyvér", "Benjámin", "Dzsenifer"),
@@ -63,7 +63,7 @@ class NevnapLista extends Nevnap  {
 						array("Martina", "Gerda", "Jácinta"),
 						array("Marcella", "János")
 					),
-					"Február"		=>	array(
+					2		=>	array(
 						array("Ignác", "Brigitta", "Kincső"),
 						array("Karolina", "Karola", "Aida"),
 						array("Balázs", "Oszkár", "Celerina"),
@@ -87,14 +87,14 @@ class NevnapLista extends Nevnap  {
 						array("Eleonóra", "Zelmira", "Péter"),
 						array("Gerzson", "Margit", "Zétény"),
 						array("Alfréd", "Polikárp", "Mirtill"),
-						/* Szökőév */
+						/* szökőnap */
 						array("Mátyás", "Jázmin"),
 						array("Géza", "Cézár", "Vanda"),
 						array("Edina", "Viktor", "Győző"),
 						array("Ákos", "Bátor", "Gábor"),
 						array("Elemér", "Oszvald", "Román")
 					),
-					"Március"		=>	array(
+					3		=>	array(
 						array("Albin", "Albina", "Leonita", "Lea"),
 						array("Lujza", "Ágnes", "Henrik", "Magor"),
 						array("Kornélia", "Kunigunda", "Frigyes"),
@@ -127,7 +127,7 @@ class NevnapLista extends Nevnap  {
 						array("Zalán"),
 						array("Árpád", "Benjámin", "Benő")
 					),
-					"Április"		=>	array(
+					4		=>	array(
 						array("Hugó", "Agád"),
 						array("Áron", "Ferenc"),
 						array("Buda", "Richárd", "Hóvirág", "Indira"),
@@ -159,7 +159,7 @@ class NevnapLista extends Nevnap  {
 						array("Péter", "Katalin", "Roberta"),
 						array("Katalin", "Kitti", "Zsófia", "Piusz")
 					),
-					"Május"			=>	array(
+					5			=>	array(
 						array("Fülöp", "Jakab", "Zsaklin", "Jefte", "József"),
 						array("Zsigmond", "Atanáz", "Zoé"),
 						array("Tímea", "Irma", "Jakab", "Fülöp"),
@@ -192,7 +192,7 @@ class NevnapLista extends Nevnap  {
 						array("Janka", "Zsanett", "Johanna", "Nándor"),
 						array("Angéla", "Petronella")
 					),
-					"Június"		=>	array(
+					6		=>	array(
 						array("Tünde", "Jusztinusz"),
 						array("Kármen", "Anita", "Péter", "Marcellinusz"),
 						array("Klotild", "Cecília", "Károly"),
@@ -224,7 +224,7 @@ class NevnapLista extends Nevnap  {
 						array("Péter", "Pál","Emőke", "Judit", "Petra", "Szulamit", "Ivett"),
 						array("Pál")
 					),
-					"Július"		=>	array(
+					7		=>	array(
 						array("Tihamér", "Annamária", "Olivér", "Áron"),
 						array("Ottó"),
 						array("Kornél", "Soma", "Tamás"),
@@ -257,7 +257,7 @@ class NevnapLista extends Nevnap  {
 						array("Judit", "Xénia", "Péter"),
 						array("Oszkár", "Ignác", "Bató")
 					),
-					"Augusztus"		=>	array(
+					8		=>	array(
 						array("Boglárka", "Nimród", "Alfonz"),
 						array("Lehel"),
 						array("Hermina", "Lídia", "Kamélia", "Mirtill"),
@@ -290,7 +290,7 @@ class NevnapLista extends Nevnap  {
 						array("Rózsa", "Félix", "Letícia"),
 						array("Erika", "Bella", "Arisztid")
 					),
-					"Szeptember"	=>	array(
+					9	=>	array(
 						array("Egyed", "Egon", "Noémi", "Tamara"),
 						array("Rebeka", "Dorina", "Renáta", "Ingrid", "István"),
 						array("Hilda", "Gergely"),
@@ -322,7 +322,7 @@ class NevnapLista extends Nevnap  {
 						array("Mihály", "Gábor", "Rafael", "Mirabella"),
 						array("Jeromos", "Honória", "Hunor")
 					),
-					"Október"		=>	array(
+					10		=>	array(
 						array("Malvin", "Teréz"),
 						array("Petra", "Örs"),
 						array("Helga", "Évald"),
@@ -355,7 +355,7 @@ class NevnapLista extends Nevnap  {
 						array("Alfonz", "Zenóbia"),
 						array("Farkas", "Rodrigó", "Wolfgang")
 					),
-					"November"		=>	array(
+					11		=>	array(
 						array("Marianna"),
 						array("Achilles", "Bató"),
 						array("Győző", "Márton"),
@@ -387,7 +387,7 @@ class NevnapLista extends Nevnap  {
 						array("Taksony", "Ilma", "Filoména"),
 						array("András", "Andor", "Andrea")
 					),
-					"December"		=>	array(
+					12		=>	array(
 						array("Elza", "Natália", "Blanka", "Bonita"),
 						array("Melinda", "Vivien", "Aranka"),
 						array("Ferenc", "Olívia"),
@@ -424,7 +424,7 @@ class NevnapLista extends Nevnap  {
 				break;
 			case "pl_PL":
 				return array(
-					"Styczeñ"		=>	array(
+					1		=>	array(
 						array("Mieczysław", "Mieczysława", "Mieszko"),
 						array("Abel", "Achacy", "Achacjusz", "Aspazja", "Bazyli", "Izydor", "Jakobina", "Jakubina", "Makary", "Narcyz", "Stefania", "Strzeżysław", "Sylwester", "Sylwestra", "Telesfor", "Telesfora"),
 						array("Danuta", "Piotr", "Genowefa"),
@@ -457,7 +457,7 @@ class NevnapLista extends Nevnap  {
 						array("Feliks", "Gerard", "Maciej", "Marcin", "Martyna", "Sebastian"),
 						array("Euzebiusz", "Jan", "Piotr")
 					),
-					"Luty"			=>	array(
+					2			=>	array(
 						array("Dobrochna", "Iga", "Ignacy", "Paweł", "Siemirad", "Żegota"),
 						array("Joanna", "Korneliusz", "Maria", "Miłosława", "Rory"),
 						array("Błażej", "Maksym", "Oskar", "Stefan", "Telimena"),
@@ -488,7 +488,7 @@ class NevnapLista extends Nevnap  {
 						array("Józef", "Roman", "Lech"),
 						array("Dobronieg", "Roman")
 					),
-					"Marzec"		=>	array(
+					3		=>	array(
 						array("Albin", "Antoni", "Antonina", "Amelia", "Feliks", "Herakles", "Joanna", "Józef", "Piotr"),
 						array("Franciszek", "Helena", "Henryk", "Krzysztof", "Michał", "Paweł", "Piotr", "Radosław"),
 						array("Hieronim", "Maryna"),
@@ -521,7 +521,7 @@ class NevnapLista extends Nevnap  {
 						array("Amelia", "Aniela", "Częstobor", "Jan"),
 						array("Beniamin", "Dobromira", "Kornelia")
 					),
-					"Kwiecieñ"		=>	array(
+					4		=>	array(
 						array("Grażyna", "Katarzyna", "Teodora", "Tolisław", "Zbigniew", "Zbyszko"),
 						array("Franciszek", "Sądomir", "Władysław", "Władysława"),
 						array("Antoni", "Cieszygor", "Jakub", "Ryszard"),
@@ -553,7 +553,7 @@ class NevnapLista extends Nevnap  {
 						array("Angelina", "Augustyn", "Bogusław", "Piotr", "Robert"),
 						array("Bartłomiej", "Jakub", "Katarzyna", "Marian")
 					),
-					"Maj"			=>	array(
+					5			=>	array(
 						array("Aniela", "Filip", "Jakub", "Józef", "Lubomir", "Maja"),
 						array("Walter", "Witomir", "Zygmunt", "Wouter"),
 						array("Aleksander", "Antonina", "Maria", "Mariola", "Świętosława"),
@@ -586,7 +586,7 @@ class NevnapLista extends Nevnap  {
 						array("Feliks", "Joanna"),
 						array("Aniela", "Bożysława", "Teodor")
 					),
-					"Czerwiec"		=>	array(
+					6		=>	array(
 						array("Bernard", "Jakub", "Konrad", "Magdalena", "Nikodem", "Symeon", "Świętopełk"),
 						array("Eugeniusz", "Maria", "Marianna", "Mikołaj", "Piotr", "Racisław"),
 						array("Konstantyn", "Leszek", "Paula", "Tamara"),
@@ -618,7 +618,7 @@ class NevnapLista extends Nevnap  {
 						array("Dalebor", "Paweł", "Piotr"),
 						array("Ciechosława", "Emilia", "Lucyna")
 					),
-					"Lipiec"		=>	array(
+					7		=>	array(
 						array("Halina", "Marian"),
 						array("Maria", "Piotr", "Jagoda"),
 						array("Jacek", "Leon", "Miłosław"),
@@ -651,7 +651,7 @@ class NevnapLista extends Nevnap  {
 						array("Julia", "Julita", "Ludmiła", "Maryna"),
 						array("Emilian", "Helena", "Iga", "Ignacy", "Ludomir")
 					),
-					"Sierpieñ"		=>	array(
+					8		=>	array(
 						array("Konrad", "Piotr"),
 						array("Borzysława", "Karina", "Maria", "Stefan"),
 						array("Augusta", "Lidia", "Nikodem", "Szczepan"),
@@ -684,7 +684,7 @@ class NevnapLista extends Nevnap  {
 						array("Częstowoj", "Miron", "Rebeka", "Róża", "Szczęsna", "Szczęsny"),
 						array("Bohdan", "Paulina", "Rajmund", "Świętosław")
 					),
-					"Wrzesieñ"	=>	array(
+					9	=>	array(
 						array("Bronisław", "Bronisława", "Bronisz"),
 						array("Bohdan", "Czesław", "Eliza", "Henryk", "Julian", "Stefan", "Tobiasz", "Witomysł"),
 						array("Antoni", "Bartłomiej", "Bronisław", "Bronisz", "Izabela", "Jan", "Joachim", "Mojmir", "Szymon", "Wincenty", "Zenon"),
@@ -716,7 +716,7 @@ class NevnapLista extends Nevnap  {
 						array("Michał", "Rafał", "Gabriel"),
 						array("Grzegorz", "Hieronim", "Honoriusz", "Imisław", "Rachela", "Wera", "Wiera", "Wiktor", "Zofia")
 					),
-					"Padziernik"		=>	array(
+					10		=>	array(
 						array("Danuta", "Remigiusz", "Cieszysław", "Dan", "Danisz", "Danuta", "Igor", "Jan", "Remigiusz"),
 						array("Stanimir", "Teofil"),
 						array("Gerard", "Józefa", "Sierosław", "Teresa"),
@@ -749,7 +749,7 @@ class NevnapLista extends Nevnap  {
 						array("Edmund", "Klaudiusz", "Przemysław", "Sądosław"),
 						array("Antoni", "Antonina", "Godzimir", "Lucylla", "Łukasz", "Dezemir")
 					),
-					"Listopad"		=>	array(
+					11		=>	array(
 						array("Andrzej", "Seweryn", "Warcisław", "Wiktoryna"),
 						array("Bohdana", "Bożydar", "Małgorzata", "Stojmir", "Tobiasz"),
 						array("Bogumił", "Cezary", "Chwalisław", "Hubert", "Sylwia"),
@@ -781,7 +781,7 @@ class NevnapLista extends Nevnap  {
 						array("Błażej", "Bolemysł", "Fryderyk", "Przemysł"),
 						array("Andrzej", "Justyna", "Konstanty")
 					),
-					"Grudzieñ"		=>	array(
+					12		=>	array(
 						array("Blanka", "Długosz", "Edmund", "Iwa", "Natalia", "Sobiesława"),
 						array("Aurelia", "Balbina", "Bibiana", "Budzisław", "Budzisława", "Ludwina", "Paulina", "Sulisław", "Sylweriusz", "Sylwery", "Wiktoryn", "Zbylut"),
 						array("Franciszek", "Kasjan", "Lucjusz", "Unimir"),

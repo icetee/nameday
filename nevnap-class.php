@@ -34,9 +34,9 @@ class Nevnap {
 	function __construct() {
 
 		$this->_year = date("Y");
-		$this->_months = utf8_encode(ucfirst(strtolower(strftime("%B"))));
+		$this->_months = date("n");
 		$this->_days = date("j");
-		$this->_lang = "hu_HU";
+		$this->setLang("hu-HU");
 	}
 
 	/*  @return 		'bool' true/false - leap year */
@@ -66,14 +66,12 @@ class Nevnap {
 			case "hu_HU":
 			default:
 				setlocale(LC_ALL, 'hu');
-				$this->__construct();
-				$this->_leap = "Szökőév";
+				$this->_leap = "szökőnap";
 				$this->_lang = "hu_HU";
 				break;
 
 			case "pl_PL":
 				setlocale(LC_ALL, 'pl');
-				$this->__construct();
 				$this->_leap = "Rok przestępny";
 				$this->_lang = "pl_PL";
 				break;
@@ -91,7 +89,7 @@ class Nevnap {
 		$_date = date_create($date);
 
 		$this->_year = date_format($_date, "Y");
-		$this->_months = utf8_encode(ucfirst(strtolower(strftime("%B", $_date->getTimestamp()))));
+		$this->_months = date_format($_date, "n");
 		$this->_days = date_format($_date, "j");
 	}
 
@@ -107,11 +105,6 @@ class Nevnap {
 	*
 	*/
 
-	/* @retrun 		February (leep_month) multilanguage */
-	public function getLeapMonth() {
-
-		return array_keys(NevnapLista::nevNapok($this->_lang))[1];
-	}
 
 	/* @return 	global variables */
 	public function getDate() {
@@ -127,16 +120,16 @@ class Nevnap {
 	public function getNowNameday($limit = 3, $addDay = 0){
 
 		$return = array();
+		$days = $this->_days;
 
-		if ($this->leapYear() == true && $this->_months == $this->getLeapMonth() && $this->_lang == "hu_HU") {
-			if ($this->_days == 25 || $this->_days == 26 || $this->_days == 27 || $this->_days == 28 || $this->_days == 29) {
-				$this->_days--;
-			}
+		if ($this->leapYear() && $this->_months == 2 && $this->_lang == "hu_HU") {
+			if ($days > 24)
+				$days--;
 		}
 
-		if ($this->leapYear() == true && $this->_months == $this->getLeapMonth() && $this->_days == 24 && $this->_lang == "hu_HU") { echo "(".$this->_leap.")"; } else {
+		if ($this->leapYear() && $this->_months == 2 && $this->_days == 24 && $this->_lang == "hu_HU") { echo "(".$this->_leap.")"; } else {
 
-			foreach (NevnapLista::nevNapok($this->_lang)[$this->_months][$this->_days-1+$addDay] as $key => $nevek) {
+			foreach (NevnapLista::nevNapok($this->_lang)[$this->_months][$days-1+$addDay] as $key => $nevek) {
 				$return[] = $nevek;
 
 				if ($key == ($limit-1) && $limit != 0) {
