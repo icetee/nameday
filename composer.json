@@ -1,0 +1,24 @@
+{
+    "name": "icetee/nameday",
+    "description": "Name day(s) - It consists of celebrating a day of the year that is associated with one's given name.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Tamás András Horváth",
+        "email": "htomy92@gmail.com"
+    }],
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Icetee\\Nameday\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    }
+}
